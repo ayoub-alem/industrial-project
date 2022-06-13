@@ -1,0 +1,82 @@
+.manuel-control {
+    margin: 40px 0;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+}
+
+.manuel-control h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.manuel-control-liaison {
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+.manuel-control-vider-bac {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manuel-control-liaison-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manuel-control input {
+    max-width: 440px;
+    padding: 12px 30px;
+    margin: 5px 0;
+    font-size: 16px;
+    background-color: #f1da45;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+.manuel-control input::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+.manuel-control-liaison-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.manuel-control button {
+    padding: 8px 16px;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .3s;
+    min-width: 100px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.manuel-control button:hover {
+    opacity: .8;
+}
+
+.manuel-control-liaison-buttons button:first-of-type {
+    background-color: #009879;
+}
+
+
+.manuel-control :is(button:last-of-type) {
+    background-color: red;
+}
+
+.manuel-control-vider-bac button:last-child {
+    margin-top: 10px;
+}

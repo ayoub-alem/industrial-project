@@ -1,0 +1,38 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1da45;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+.navbar:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+    transform: translateY(-5px);
+}
+
+.navbar li {
+    list-style: none;
+    position: relative;
+}
+
+
+.navbar li a {
+    padding: 4px 15px 6px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: .2s;
+}
+
+.navbar li a:visited {
+    color: black
+}
+
+.navbar li :is(a:hover, a:active) {
+    background-color: #333;
+    color: white;
+}
